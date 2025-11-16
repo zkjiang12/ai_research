@@ -1,0 +1,8 @@
+spent a total of ~1hr (11/15/2025)
+
+had basic knowledge of everything before hand and sophmore year of highschool built neural net from scratch.
+but still had to reason through which derivatives to use and then how to update the weights.
+
+was pretty fun. quite simple. 
+
+the math makes sense. I think it gets slightly complicated when we add more neurons and we add a non-linearity and we add more layers, but that should still be logicable. 
