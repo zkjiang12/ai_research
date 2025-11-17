@@ -1,0 +1,39 @@
+building single layer neural net. 
+
+will use numpy but prefer not to use any other libraries. 
+
+should be pretty simple? unsure what the ground truth is. also weird that there will be N outputs for the N neurons. 
+
+8:48pm
+Ok something that came up is the shape of the vectors and the matrices. this some linalg stuff that I need to sort through
+Need to store the X_cord and the w_vec as 1D arrays. 
+
+Ok, it's a numpy operation thing. you need to treat one of the arrays you're multiplying together as a matrix to do the dot product. 
+hmmm, wait why do we need to do dot product?
+well if you have many inputs like a row of an image or a sequence of text and you want to pass that through a neural net to understand it or what not. 
+you would pass it as a vector. And you would want some operation to be done on each of the elements.
+So, that leaves 2 options. element wise multiplication or just basic matrix multiplication which is the standard for when you have two matrixes lol.
+I guess the real question is why dot product for matrix multiplication. Why was that the definition and not element wise. 
+- maybe cuz its more helpful with physics, like dot product is projection of one line onto another line, like a*cos(theta) or smth. 
+- or maybe cuz its more differentiable? 
+[a1,a2] * [b1, b2] assume b is column vector. the dot product would do a1*b1+a2*b2. 
+[[a11,a12],[a21,a22]] * [[b11,b12],[b21,b22]] = [a11,a12] dot [b11,b12], [a21,a22] dot [b21,b22]? 
+(!!!!) need to relearn dot products/find sometime to reason through all of this. 
+
+9:07pm
+solved it lmao. I just forgot to do the equals for the reshape to be registered lol. 
+build the visualization stuff later. should be chill just do it for each neuron. 
+theoretically, each neuron should be able to approximate each function? although... maybe it doesn't since we did dot product so they affect each other? 
+ok so yea it could either overfit and work or not work and converge to a mean of all the options. 
+
+think more on this when I get back. 
+
+TO DO:
+reason through dot products, and vectorization. 
+- first how they work/the oeprations.
+- 2nd diff ways to express it.
+- why dot product is popular/why this way of multiplying matrices is helpful.
+
+
+NOTE:
+something I want to explore when we do 2 layer or 3 layer neural nets is whether its possible to fit to a polynomial or a higher order function. 
